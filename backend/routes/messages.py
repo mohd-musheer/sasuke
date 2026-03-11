@@ -47,7 +47,7 @@ def update_analytics(user_id, field):
     if not analytics:
         analytics = Analytics(user_id=user_id, date=today)
         db.session.add(analytics)
-    setattr(analytics, field, getattr(analytics, field) + 1)
+    setattr(analytics, field, (getattr(analytics, field) or 0) + 1)
     db.session.commit()
 
 @messages_bp.route('/send/<username>', methods=['POST'])

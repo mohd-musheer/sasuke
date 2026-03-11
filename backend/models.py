@@ -92,7 +92,7 @@ class Report(db.Model):
     reporter_id = db.Column(db.Integer, default=None)
     reason = db.Column(db.String(255), nullable=False)
     description = db.Column(db.Text, default=None)
-    status = db.Column(db.Enum('pending', 'reviewed', 'dismissed'), default='pending')
+    status = db.Column(db.Enum('pending', 'reviewed', 'dismissed', name='report_status'), default='pending')
     reported_at = db.Column(db.DateTime, default=datetime.utcnow)
 
     def to_dict(self):
