@@ -17,6 +17,12 @@ A full-stack anonymous Q&A platform inspired by NGL. Users generate a personal l
 
 ---
 
+<!-- ...existing code... -->
+
+> **Live App:** https://sasuke-fruntend.onrender.com
+
+<!-- ...existing code... -->
+
 ## 🛠️ Tech Stack
 
 | Layer | Technology |
